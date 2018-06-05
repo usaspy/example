@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="xxqx@116.62.164.196">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="xxqx">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="1" name="mysql">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="1" name="performance_schema">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="6" parent="1" name="test">
+      <Visible>1</Visible>
+    </schema>
+  </database-model>
+</dataSource>
