@@ -6,7 +6,7 @@ import os
 class Spider(object):
     data = ''
     def __init__(self):
-        self.baseurl = 'http://116.62.164.196:8080/portal/index'
+        self.baseurl = 'http://www.sohu.com'
 
     def getPageData(self):
         print(self.baseurl)
@@ -16,7 +16,7 @@ class Spider(object):
             #print(self.data)
 
     def getPicNews(self):
-        pattern = re.compile('<div class="new_bg" style="background-image: url\((.*?)\);">',re.S)
+        pattern = re.compile('"picUrl":"(.*?)","mediaId":',re.S)
         items = re.findall(pattern,self.data)
         for item in items:
             print(item)
@@ -25,7 +25,7 @@ class Spider(object):
     def savePic(self,dir,pics):
         for pic in pics:
             with urllib.request.urlopen(pic) as p:
-                s = pic.split('/xinwen/')
+                s = pic.split('/news/')
                 f=open('%s%s%s'%(dir,'/',s[1]),'wb')
                 f.write(p.read())
 

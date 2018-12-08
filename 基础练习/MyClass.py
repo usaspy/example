@@ -18,10 +18,10 @@ class ClassMe(object):
             print('name必须在0-100之间')
 
     def __poo(self):
-        print('这是私有的法国你发',ClassMe.i)
+        print('这是私有的法国你发',ClassMe.f(self))
 
     def poo(self):
-        self.__poo()
+         self.__poo()
 
 
 c = ClassMe('zhanghong')

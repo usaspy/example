@@ -2,7 +2,7 @@ from multiprocessing import Pool
 import time
 
 def x(args):
-    time.sleep(1)
+    time.sleep(4)
     print("args=%d"% args)
     return args
 
@@ -16,6 +16,6 @@ if __name__ == "__main__":
     p.close()
     p.join()
     print("over-")
-
+    print(res)
     for r in res:
         print(r.get())

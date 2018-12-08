@@ -1,7 +1,7 @@
 import pickle
 import json
 
-d = {'name':'','num':1102}
+d = {'name':'444','num':22}
 try:
     f = open('d:/dump1.txt','w')
     json.dump(d,f)

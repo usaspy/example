@@ -21,6 +21,7 @@ p = Parrot()
 s = Bird()
 p.fly()
 p.eat()
+s.fly()
 
 print('p是鹦鹉额？',isinstance(p,Parrot))
 print('p是额？',isinstance(p,Bird))
@@ -33,9 +34,7 @@ if type(isinstance) == types.BuiltinFunctionType:
     print(True)
 else:
     print(False)
-
+print("-------------------------------")
 print(isinstance([1,2],(tuple,list)))
 print(dir({1:1}))
 
-
-print(s)
