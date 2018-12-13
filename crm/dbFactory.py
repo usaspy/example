@@ -56,6 +56,6 @@ class dbFactory(object):
 
         return True
 
-#c = dbFactory("116.62.164.196","root","xxqx@2017mysql!@#","CRM")
-#data  = c.exeQuery("select username,sex,age,address,password from user")
-#print(data)
+c = dbFactory("116.62.164.196","root","xxqx@2017mysql!@#","CRM")
+data  = c.exeQuery("select username,sex,age,address,password from user")
+print(data)

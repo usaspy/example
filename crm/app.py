@@ -1,7 +1,7 @@
 import hashlib
 import flask
 import ssl
-from crm import flask_httpauth
+import flask_httpauth
 from passlib.apps import custom_app_context as pwd_context
 from crm.dbFactory import dbFactory
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer, SignatureExpired, BadSignature
