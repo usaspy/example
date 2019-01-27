@@ -10,7 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = flask.Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:xxqx@2017mysql!@#@116.62.164.196/CRM"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:123456@172.18.3.240/CRM"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['SECRET_KEY'] = '\xca\x0c\x86\x04\x98@\x02b\x1b7\x8c\x88]\x1b\xd7"+\xe6px@\xc3#\\'
 db = SQLAlchemy(app)
